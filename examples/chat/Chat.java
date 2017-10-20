@@ -18,7 +18,8 @@ public class Chat extends Thread {
     @Override
     public void run() {
         try {
-			socket = new SocketIO("http://localhost:3000", callback);
+//vand			socket = new SocketIO("http://localhost:3000", callback);
+			socket = new SocketIO("http://localhost:9092", callback);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
